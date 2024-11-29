@@ -4,28 +4,14 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="description" content="T-3DGS: Removing Transient Objects for 3D Scene Reconstruction">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="3D Gaussian Splatting">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>T-3DGS: Removing Transient Objects for 3D Scene Reconstruction</title>
+  
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,21 +38,33 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">T-3DGS: Removing Transient Objects for 3D Scene Reconstruction</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                Vadim Pryadilshchikov<sup>1</sup>,</span>
+              <span class="author-block">
+                Alexander Markin<sup>1</sup>,</span>
+              <span class="author-block">
+                Artem Komarichev<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Ruslan Rakhimov<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.co.uk/citations?user=0EKXSXgAAAAJ&hl=en">Peter Wonka</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.ru/citations?user=pCRdcOwAAAAJ&hl=ru">Evgeny Burnaev</a><sup>1,4</sup>,
+              </span>
+              
                   </div>
-
+                
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Skoltech, Russia,</span>
+                    <span class="author-block"><sup>2</sup>Robotics Center, Russia</span>
+                    <span class="author-block"><sup>3</sup>KAUST, Saudi Arabia</span>
+                    <span class="author-block"><sup>4</sup>AIRI, Russia</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -81,21 +79,21 @@
                         <span>Paper</span>
                       </a>
                     </span>
-
-                    <!-- Supplementary PDF link -->
+                    
+                    <!-- ArXiv abstract Link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
+                        <i class="ai ai-arxiv"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>arXiv</span>
                     </a>
                   </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -104,14 +102,17 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
+                <!-- Dataset Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                  <a href="https://github.com/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                    </a>
                   </span>
-                  <span>arXiv</span>
+                
                 </a>
               </span>
             </div>
@@ -127,124 +128,190 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <video poster="" id="teaser" autoplay muted loop width='100%'>
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/anti_stress.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
     </div>
   </div>
 </section>
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero ">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            We propose a novel framework to remove transient objects from input videos 
+            for 3D scene reconstruction using Gaussian Splatting - 
+          </p>
+          <p>
+            Our framework consists of the following steps.
+            First, we propose an unsupervised training strategy for a classification 
+            network to distinguish between transient objects and static scene parts 
+            based on their different training behavior inside the 3D Gaussian Splatting reconstruction.
+          </p>
+          <p>
+            Then, we improve the boundary quality and stability of the detected transients 
+            by combining our results from the first step with an off-the-shelf segmentation method. 
+            We also propose a simple and effective strategy to track objects in the input video 
+            forward and backward in time.
           </p>
         </div>
+        <img src="static/images/pipeline.png" class="img-responsive" alt="overview" width="120%" style="max-height: 450px;margin:auto;">
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+<!-- Reconstruction comparisons -->
+<section class="section">
+  <div class="container has-text-centered is-max-desktop">
+    <h2 class="title is-3">On-the-go dataset Visual Comparisons</h2>
+    <div class="content has-text-justified">
     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <div class="columns is-centered">
+            <div class="column">
+
+              <div id="example1" class="bal-container-small">
+      
+                <div class="bal-after">
+                  <img src="static/images/fountain_comparison_ours.jpg">
+                  <div class="bal-afterPosition afterLabel" style="z-index: 1;">
+                    Ours
+                  </div>
+                </div>
+              
+                <div class="bal-before" style="width:57.361111111111114%;">
+                  <div class="bal-before-inset" style="width: 628px;">
+                    <img src="static/images/fountain_comparison_sls.jpg">
+                    <div class="bal-beforePosition beforeLabel">
+                      SpotLessSplats
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="bal-handle" style="left:57.361111111111114%;">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+              <div id="example2" class="bal-container-small">
+      
+                <div class="bal-after">
+                  <img src="static/images/mountain_comparison_ours.jpg">
+                  <div class="bal-afterPosition afterLabel" style="z-index: 1;">
+                    Ours
+                  </div>
+                </div>
+              
+                <div class="bal-before" style="width:57.361111111111114%;">
+                  <div class="bal-before-inset" style="width: 628px;">
+                    <img src="static/images/mountain_comparison_sls.jpg">
+                    <div class="bal-beforePosition beforeLabel">
+                      SpotLessSplats
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="bal-handle" style="left:57.361111111111114%;">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+
+            </div>
 
 
+            <div class="column">
 
+              <div id="example3" class="bal-container-small">
+                <div class="bal-after">
+                  <img src="static/images/patio_high_comparison_ours.jpg">
+                  <div class="bal-afterPosition afterLabel" style="z-index: 1;">
+                    Ours
+                  </div>
+                </div>
+              
+                <div class="bal-before" style="width:57.361111111111114%;">
+                  <div class="bal-before-inset" style="width: 628px;">
+                    <img src="static/images/patio_high_comparison_sls.jpg">
+                    <div class="bal-beforePosition beforeLabel">
+                      SpotLessSplats
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="bal-handle" style="left:57.361111111111114%;">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              
+              </div>
+              <div id="example4" class="bal-container-small">
+                <div class="bal-after">
+                  <img src="static/images/patio_comparison_ours.jpg">
+                  <div class="bal-afterPosition afterLabel" style="z-index: 1;">
+                    Ours
+                  </div>
+                </div>
+              
+                <div class="bal-before" style="width:57.361111111111114%;">
+                  <div class="bal-before-inset" style="width: 628px;">
+                    <img src="static/images/patio_comparison_sls.jpg">
+                    <div class="bal-beforePosition beforeLabel">
+                      SpotLessSplats
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="bal-handle" style="left:57.361111111111114%;">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              
+              </div>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
-
-<!-- Video carousel -->
+<!-- Mask Prop carousel -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Robust Mask Propagation</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
+          <video class="center" id="video1" controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <source src="static/videos/library2_half_7000_10_filter.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
+          <video class="center" id="video2" controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
+            <source src="static/videos/scene_3_7000_10_filter.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+          <video class="center" id="video3" controls muted loop height="100">
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+            <source src="static/videos/lab2_7000_10_filter.mp4"
             type="video/mp4">
           </video>
         </div>
@@ -252,26 +319,92 @@
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End Mask Prop carousel -->
 
 
+<section class="section">
+  <div class="container has-text-centered is-max-desktop">
+    <h2 class="title is-3">Visual Comparisons of TMR</h2>
+    <div class="content has-text-justified">
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <div class="columns is-centered">
+            <div class="column">
+
+              <div id="example5" class="bal-container-big">
+      
+                <div class="bal-after">
+                  <video poster="" id="video1_before" autoplay muted loop height="100%" width="100%">
+                    <source src="static/videos/library2_half.mp4"
+                    type="video/mp4">
+                  </video>
+                  <div class="bal-afterPosition afterLabel" style="z-index: 1;">
+                    Without TMR
+                  </div>
+                </div>
+              
+                <div class="bal-before" style="width:57.361111111111114%;">
+                  <div class="bal-before-inset" style="width: 628px;">
+                    <video poster="" id="video1_after" autoplay muted loop height="100%" width="100%">
+                      <source src="static/videos/library2_half_sam.mp4"
+                      type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel">
+                      With TMR
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="bal-handle" style="left:57.361111111111114%;">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
 
 
+            <div class="column">
 
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+              <div id="example6" class="bal-container-big">
+                <div class="bal-after">
+                  <video poster="" id="video2_before" autoplay muted loop height="100%" width="100%">
+                    <source src="static/videos/lab1_test.mp4"
+                    type="video/mp4">
+                  </video>
+                  <div class="bal-afterPosition afterLabel" style="z-index: 1;">
+                    Without TMR
+                  </div>
+                </div>
+              
+                <div class="bal-before" style="width:57.361111111111114%;">
+                  <div class="bal-before-inset" style="width: 628px;">
+                    <video poster="" id="video2_after" autoplay muted loop height="100%" width="100%">
+                      <source src="static/videos/lab1_sam_test.mp4"
+                      type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel">
+                      With TMR
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="bal-handle" style="left:57.361111111111114%;">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
+
 
 
 <!--BibTex citation -->
@@ -292,8 +425,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            The image comparison with sliding bar is from <a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/" target="_blank">Gaussian Splatting</a>
           </p>
 
         </div>
@@ -302,11 +434,27 @@
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
+    <script src="static/js/script.js"></script>
+    <script>
+      new BeforeAfter({
+          id: '#example1'
+      });
+      new BeforeAfter({
+          id: '#example2'
+      });
+      new BeforeAfter({
+          id: '#example3'
+      });
+      new BeforeAfter({
+          id: '#example4'
+      });
+      new BeforeAfter({
+          id: '#example5'
+      });
+      new BeforeAfter({
+          id: '#example6'
+      });
   
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
+  </script>
   </body>
   </html>
